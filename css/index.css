@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Kanit", sans-serif;
+  padding-top: 6em;
+}
+
+/* li.nav-item {
+    height: 5em;
+} */
+
+.recommend {
+  padding: 1em 0em;
+  text-align: center;
+  color: white;
+  text-shadow: -1px 1px 6px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(-45deg, #004c6d, #517590, #8aa1b4, #c4cfd9);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.recom {
+  margin-bottom: 5em;
+}
+
+.recom img {
+  height: 15rem !important;
+  width: 100% !important;
+  object-fit: cover;
+}
+
+.roomimg {
+  width: 18rem !important;
+}
+
+.card-body .btn-more {
+  background-color: #64839b;
+  color: white;
+  width: 9em;
+  border-radius: 20px !important;
+}
+
+.card-body .btn-more:hover {
+  background-color: #b1bfcc !important;
+}
+
+.footrow {
+  padding: 2em 0em 3em;
+}
+/* --------------------------------------------------------------- */
+
+.hero-banner {
+  align-items: center;
+  display: flex;
+  /* height: 100vh; */
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  z-index: -1;
+}
+
+.hero-banner__image {
+  border-radius: 20px;
+  position: fixed;
+  transform: rotate(-15deg);
+  width: 100%;
+  filter: blur(3px) opacity(15%);
+}
+.search form {
+  background-color: white !important;
+  padding: 3em 10em;
+}
+
+.formcol{
+  background-color: #f6f6f6;
+  border-radius: 30px;
+  padding: 2em;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.nomargin{
+  margin: 0 !important;
+}
+.nomargin .btn-more {
+  background-color: #64839b;
+  color: white;
+  width: 8em;
+  border-radius: 20px !important;
+  margin: 0.5em;
+}
+
+.nomargin .btn-more:hover {
+  background-color: #b1bfcc !important;
+  font-weight: bold;
+}
+.nomargin label{
+  font-weight: bold;
+}
+/* come in  */
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.already-visible {
+  transform: translateY(0);
+  animation: none;
+}
+@keyframes come-in{
+  0% {
+      transform: translateY(1000px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+/* come in  */
